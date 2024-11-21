@@ -1,0 +1,31 @@
+# swap windows
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - h : yabai -m window --swap west
+shift + alt - l : yabai -m window --swap east
+
+# Move the focused window to the display above and focus it
+shift + alt - up : yabai -m window --display north && yabai -m display --focus north
+shift + alt - down : yabai -m window --display south && yabai -m display --focus south
+
+# move window to prev and next space
+shift + alt - left : yabai -m window --space prev --focus;
+shift + alt - right : yabai -m window --space next --focus;
+
+# move window to space #
+shift + alt - 1 : yabai -m window --space 1 --focus;
+shift + alt - 2 : yabai -m window --space 2 --focus;
+shift + alt - 3 : yabai -m window --space 3 --focus;
+shift + alt - 4 : yabai -m window --space 4 --focus;
+shift + alt - 5 : yabai -m window --space 5 --focus;
+
+# restart yabai
+shift + alt - r : yabai --restart-service
+shift + alt - s : yabai --stop-service
+shift + alt - o : yabai --start-service
+
+shift + alt + ctrl - left : yabai -m window --resize right:-30:0 2> /dev/null || yabai -m window --resize left:-30:0 2> /dev/null
+shift + alt + ctrl - up : yabai -m window --resize bottom:0:30 2> /dev/null || yabai -m window --resize top:0:30 2> /dev/null
+shift + alt + ctrl - down : yabai -m window --resize bottom:0:-30 2> /dev/null || yabai -m window --resize top:0:-30 2> /dev/null
+shift + alt + ctrl - right : yabai -m window --resize right:30:0 2> /dev/null || yabai -m window --resize left:30:0 2> /dev/null
+
