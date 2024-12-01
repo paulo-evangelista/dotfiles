@@ -1,0 +1,12 @@
+[tools]
+cmake = "latest"
+go = "1.23.3"
+"go:github.com/air-verse/air" = "latest"
+node = "latest"
+"npm:gtop" = "latest"
+python = "latest"
+rust = "1.83"
+usage = "latest"
+
+[settings]
+experimental = true
