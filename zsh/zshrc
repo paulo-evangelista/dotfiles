@@ -17,7 +17,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $ZSH/oh-my-zsh.sh
 
-alias zshconfig="lvim ~/.zshrc"
+alias zshconfig="lvim ~/.config/zsh/zshrc"
 alias kittyconfig="lvim ~/.config/kitty/kitty.conf"
 alias p10kconfig="lvim ~/.p10k.zsh"
 alias neofetchconfig="lvim ~/.config/neofetch/config.conf"
@@ -32,7 +32,6 @@ alias cdc="cd ~/Code && ls"
 alias cdo="cd ~/Others && ls"
 alias cdv="cd ~/Vert/ && ls"
 alias cdco="cd ~/.config/ && ls"
-alias hello="echo '-- Hello World! :) --'"
 alias byebye="shutdown now"
 alias c="clear && echo"
 alias dev="npm run dev"
@@ -54,7 +53,6 @@ alias kb="kubectl"
 alias asdfg="asdf global"
 alias asdfi="asdf install"
 alias ls="eza --header --icons --sort=type"
-
 dockerrmc() {
   docker rm $(docker ps -qa) -vf
 }
